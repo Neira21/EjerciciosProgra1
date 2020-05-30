@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+
+<body>
+    <h1>Formulario para carrito de ventas</h1>
+    <form action="php.php" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Escribe tu email">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea type="text" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+            
+        <label for="numTar">Numero de la tarjeta</label>
+        <input id="numTar" type="number" placeholder="Número de tarjeta" required> 
+
+        <label for="nomTar">Nombre de la tarjeta</label>
+        <input id="nomTar" type="text" placeholder="Nombre de tarjeta" required>
+
+        <label for="FecExp">Fecha de expiración</label>
+        <select name="Mes" id="" style="width: 200px;">
+            <option value="">Enero</option>
+            <option value="">Febrero</option>
+            <option value="">Marzo</option>
+            <option value="">Abril</option>
+            <option value="">Junio</option>
+            <option value="">Julio</option>
+            <option value="">Agosto</option>
+            <option value="">Setiembre</option>
+            <option value="">Octubre</option>
+            <option value="">Noviembre</option>
+            <option value="">Diciembre</option>
+        </select>    
+        <select name="Año" id="" style="width: 150px; position: relative; left: 10px;">
+            <option value="">2020</option>
+            <option value="">2021</option>
+            <option value="">2022</option>
+            <option value="">2023</option>
+            <option value="">2024</option>
+            <option value="">2025</option>
+            <option value="">2026</option>
+            <option value="">2027</option>
+            <option value="">2028</option>
+            <option value="">2029</option>
+            <option value="">2030</option>
+        </select>    
+
+        <label for="codSeg">Codigo de seguridad (CCV)</label>
+        <input id="codSeg" type="number" placeholder="Codigo de seguridad" >
+        
+        <div class="izquierda">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Está deacuerdo con las condiciones</label>
+        </div>
+        
+        
+        <input type="submit" value="enviar" >
+    </form>
+
+  
+
+
+    <!--  
+    <form action="" method="POST">
+        
+        <div class="row"  >
+            <div class="col-3">
+                <label for="nombre"> Nombre Completo</label>
+            </div>
+            <div>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col-3">
+                <label for="correo"> Correo</label>
+            </div>
+            <div>
+                <input type="text" id="correo" placeholder="example@gmail.com">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3">
+                <label for="numTar">Numero de la tarjeta</label>
+            </div>
+            <div>
+                <input id="numTar" type="number" placeholder="Número de tarjeta">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3">
+                <label for="nomTar">Nombre de la tarjeta</label>
+            </div>
+            <div>
+                <input id="nomTar" type="text" placeholder="Nombre de tarjeta">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3">
+                Fecha de expiración
+            </div>
+            <div>
+                Mes:
+                <select name="Mes" id="">
+                    <option value="">Enero</option>
+                    <option value="">Febrero</option>
+                    <option value="">Marzo</option>
+                    <option value="">Abril</option>
+                    <option value="">Junio</option>
+                    <option value="">Julio</option>
+                    <option value="">Agosto</option>
+                    <option value="">Setiembre</option>
+                    <option value="">Octubre</option>
+                    <option value="">Noviembre</option>
+                    <option value="">Diciembre</option>
+                </select>    
+            </div>
+            <div>
+                Año:
+                <select name="Año" id="">
+                    <option value="">2020</option>
+                    <option value="">2021</option>
+                    <option value="">2022</option>
+                    <option value="">2023</option>
+                    <option value="">2024</option>
+                    <option value="">2025</option>
+                    <option value="">2026</option>
+                    <option value="">2027</option>
+                    <option value="">2028</option>
+                    <option value="">2029</option>
+                    <option value="">2030</option>
+                </select>    
+            </div>
+            
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3">
+                <label for="codSeg">Codigo de seguridad (CCV)</label>
+                
+            </div>
+            <div>
+                <input id="codSeg" type="number" placeholder="Codigo de seguridad" >
+            </div>
+            
+        </div>
+
+        <hr>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Está deacuerdo con las condiciones</label>
+        </div>
+        <hr>
+    
+        <input type="submit" class="btn btn-primary" value="Aceptar">            
+        
+    </form>
+    -->
+</body>
+</html>
